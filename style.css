@@ -291,7 +291,7 @@ body > *:not(.decor-layer) {
 }
 
 body.dutdun-page {
-    background-image: url("imagini/dutdunbackground.png");
+    background-image: url("imagini/dutdunbackground.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: repeat;
@@ -552,3 +552,4 @@ body.intrebare8-page {
   transform: scale(0.95);
 
 }
+
