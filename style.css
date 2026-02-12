@@ -8,14 +8,13 @@ html, body {
   overflow-x: hidden;
 }
 
-
 body {
     font-family: "Georgia", serif;
     background-image: url("imagini/background.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     background-repeat: repeat;
-    background-attachment: fixed;
+    background-position: center;
+    background-attachment: scroll;
     min-height: 100vh;
     text-align: center;
     position: relative;
@@ -552,5 +551,6 @@ body.intrebare8-page {
   transform: scale(0.95);
 
 }
+
 
 
