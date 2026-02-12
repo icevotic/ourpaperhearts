@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+body {
+    font-family: "Georgia", serif;
+    background-image: url("imagini/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.corner-photo,
+.corner-photo-right {
+    position: absolute;
+    width: 160px;
+    height: auto;
+}
+
+.corner-photo {
+    top: 0;
+    left: 0;
+}
+
+.corner-photo-right {
+    top: 0;
+    right: 0;
+}
+
+body > *:not(.decor-layer) {
+    position: relative;
+    z-index: 5;
+}
+
+.center-top-photo {
+    display: block;
+    margin: 120px auto 20px;
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    z-index: 11;
+    position: relative;
+}
+
+.main-photo {
+    display: block;
+    margin: 20px auto 40px;
+    width:100%;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    position: relative;
+    z-index: 9;
+}
+
+.divider-background-container {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+}
+
+.background-section {
+    width: 100%;
+    min-height: 1000px;
+    background-image: url("imagini/fundal2.jpg");
+    background-size: auto;
+    background-position: top center;
+    background-repeat: repeat-y;
+    position: relative;
+    z-index: 1;
+}
+
+.divider-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: 10;
+}
+
+.message-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: -200px auto 0;
+}
+
+.divider2-photo {
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 13;
+}
+
+.poza5-photo {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto 0;
+    position: relative;
+    z-index: 14;
+}
+
+.camera-photo {
+    width: 100%;
+    max-width: 3500px;
+    height: auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .corner-photo,
+    .corner-photo-right {
+        width: 38vw;
+        height: auto;
+        z-index: 1;
+    }
+    .center-top-photo {
+        width: 85%;
+        margin-top: 80px;
+    }
+    .main-photo {
+        max-height: 65vh;
+    }
+    .divider-photo,
+    .divider2-photo {
+        width: 100vw;
+    }
+    .poza5-photo {
+        width: 300 !important;
+        height: auto !important;
+    }
+    .background-section {
+        min-height: 650px;
+    }
+    .message-photo {
+        width: 100vw;
+        margin-top: -350px;
+    }
+}
+
+.poza7-photo {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    z-index: 14;
+    pointer-events: none;
+}
+
+.image-button {
+    position: absolute;
+    top: 180px;
+    z-index: 5;
+}
+
+.image-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.15s ease;
+}
+
+.button-left {
+    left: 48%;
+    transform: translateX(-155px);
+    width: 170px;
+}
+
+.button-right {
+    left: 52%;
+    transform: translateX(0px);
+    width: 160px;
+}
+
+.image-button:active img {
+    transform: scale(1.12);
+    width: 180px;
+}
+
+@media (hover: hover) {
+    .image-button:hover img {
+        transform: scale(1.06);
+        width: 100px;
+    }
+}
+
+.poza8-photo {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 450px;
+    height: auto;
+    z-index: 14;
+}
+
+.fundal-section {
+    width: 100%;
+    background-image: url("imagini/fundal.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 0;
+}
+
+.divider3-photo {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: -5px 0 0 0;
+    z-index: 11;
+}
+
+.poza1-photo {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    z-index: 12;
+}
+
+.themakingof-photo {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    z-index: 12;
+}
+
+.tmo-photo {
+    display: block;
+    margin: 30px auto;
+    width: 90vw;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    position: relative;
+    z-index: 12;
+}
+
+.after-themakingof-space {
+    height: 180px;
+}
+
+.botdiv-photo {
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.decor-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+body.dutdun-page {
+    background-image: url("imagini/dutdunbackground.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+.dutdun-title-photo {
+    display: block;
+    margin: 10px auto 40px; /* sus | centru | jos */
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    position: relative;
+    z-index: 5;
+}
+/* ================= DUT / DUN – GRID BUTOANE ================= */
+.dun-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+    margin: 150px auto 0;
+    width: 70%;
+    max-width: 320px;
+    position: relative;
+    z-index: 5;
+}
+
+/* ================= BUTON INDIVIDUAL ================= */
+.dun-button {
+    display: block;
+}
+
+.dun-button img {
+    display: block;
+    width: 130px;
+    height: auto;
+    transition: transform 0.15s ease;
+}
+
+/* CLICK – fără deplasare */
+.dun-button:active img {
+    transform: scale(1.12);
+}
+
+/* HOVER – desktop */
+@media (hover: hover) {
+    .dun-button:hover img {
+        transform: scale(1.06);
+    }
+}
+
+/* ================= BACK BUTTON ================= */
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 10px;
+    position: relative;
+    z-index: 5;
+}
+
+.back-button img {
+    width: 160px;
+    height: auto;
+    display: block;
+    transition: transform 0.15s ease;
+}
+
+/* CLICK */
+.back-button:active img {
+    transform: scale(1.1);
+}
+
+/* HOVER – desktop */
+@media (hover: hover) {
+    .back-button:hover img {
+        transform: scale(1.05);
+    }
+}
+
+/* ================= DUT / DUN – GRID BUTOANE ================= */
+.dut-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+    margin: 120px auto 0;
+    width: 70%;
+    max-width: 320px;
+    position: relative;
+    z-index: 5;
+}
+
+/* ================= BUTON INDIVIDUAL ================= */
+.dut-button {
+    display: block;
+}
+
+.dut-button img {
+    display: block;
+    width: 130px;
+    height: auto;
+    transition: transform 0.15s ease;
+}
+
+/* CLICK – fără deplasare */
+.dut-button:active img {
+    transform: scale(1.12);
+}
+
+/* HOVER – desktop */
+@media (hover: hover) {
+    .dut-button:hover img {
+        transform: scale(1.06);
+    }
+}
+body.intrebare1-page {
+    background-image: url("imagini/intrebare1fundal.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+body.intrebare2-page {
+    background-image: url("imagini/intrebare2fundal.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+body.intrebare3-page {
+    background-image: url("imagini/intrebare3fundal.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+body.intrebare4-page {
+    background-image: url("imagini/intrebare4fundal.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+body.intrebare5-page {
+    background-image: url("imagini/intrebare5fundal.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+body.intrebare6-page {
+    background-image: url("imagini/intrebare6fundal.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+body.intrebare7-page {
+    background-image: url("imagini/intrebare7fundal.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+body.intrebare8-page {
+    background-image: url("imagini/intrebare8fundal.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+/* ================= IMAGE + BUTTONS WRAPPER ================= */
+.top-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;   /* aceeași lățime ca imaginea */
+    margin: 0 auto;
+}
+
+/* imaginea */
+.top-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* butoane comune */
+.top-button {
+    position: absolute;
+    top: 50px;                 /* distanța față de partea de sus a imaginii */
+    width: 150px;
+    z-index: 5;
+}
+
+.top-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.15s ease;
+}
+
+/* stânga / dreapta – SIMETRIC */
+.top-left {
+    left: 45%;
+    transform: translateX(-140px);
+}
+
+.top-right {
+    left: 45%;
+    transform: translateX(30px);
+}
+
+/* interacțiune */
+.top-button:active img {
+    transform: scale(1.1);
+}
+
+@media (hover: hover) {
+    .top-button:hover img {
+        transform: scale(1.05);
+    }
+}
+
+
+/* Container separat pentru butonul YouTube */
+.youtube-button-wrapper {
+  display: flex;
+  justify-content: center; /* centrare orizontală */
+  margin-top: 300px;       /* mută butonul mai jos */
+  z-index: 0;              /* sub celelalte elemente */
+}
+
+.youtube-button img {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.youtube-button img:hover {
+  transform: scale(1.05);
+}
+
+.youtube-button img:active {
+  transform: scale(0.95);
+}
