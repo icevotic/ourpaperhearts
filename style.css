@@ -307,7 +307,6 @@ body.dutdun-page {
     position: relative;
     z-index: 5;
 }
-/* ================= DUT / DUN – GRID BUTOANE ================= */
 .dun-buttons {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -315,9 +314,9 @@ body.dutdun-page {
     justify-content: center;
     align-items: center;
 
-    margin: 150px auto 0;
-    width: 70%;
-    max-width: 320px;
+    margin: 80px auto 0;
+    width: 80%;
+    max-width: 500px;
     position: relative;
     z-index: 5;
 }
@@ -329,7 +328,7 @@ body.dutdun-page {
 
 .dun-button img {
     display: block;
-    width: 130px;
+    width: 150px;
     height: auto;
     transition: transform 0.15s ease;
 }
@@ -350,7 +349,7 @@ body.dutdun-page {
 .back-button {
     display: block;
     width: fit-content;
-    margin: 15px auto 10px;
+    margin: 60px auto 10px;
     position: relative;
     z-index: 5;
 }
@@ -382,7 +381,7 @@ body.dutdun-page {
     justify-content: center;
     align-items: center;
 
-    margin: 120px auto 0;
+    margin: 70px auto 0;
     width: 70%;
     max-width: 320px;
     position: relative;
@@ -396,7 +395,7 @@ body.dutdun-page {
 
 .dut-button img {
     display: block;
-    width: 130px;
+    width: 150px;
     height: auto;
     transition: transform 0.15s ease;
 }
@@ -412,6 +411,7 @@ body.dutdun-page {
         transform: scale(1.06);
     }
 }
+
 body.intrebare1-page {
     background-image: url("imagini/intrebare1fundal.png");
     background-size: cover;
@@ -550,4 +550,5 @@ body.intrebare8-page {
 
 .youtube-button img:active {
   transform: scale(0.95);
+
 }
